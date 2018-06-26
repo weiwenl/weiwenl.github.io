@@ -3,6 +3,7 @@
   <head>
   <title>Test Page: Don't panic</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -12,10 +13,22 @@
     <!-- 1st potential flexbox item, but not flexing because position: fixed -->
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
        <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/06/23/title-of-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/06/22/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2018/06/23/title-of-post.html">Newest Post</a></li>
 
     </ul>
@@ -192,7 +205,17 @@ the spleen and regulating the circulation.</p>
       <ul class="footer-nav nav-links">
         <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/06/23/title-of-post.html">This is the title of the post</a></li>
+    
+      <li><a href="/2018/06/22/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 <li><a href="/2018/06/23/title-of-post.html">Newest Post</a></li>
 
    </ul>
