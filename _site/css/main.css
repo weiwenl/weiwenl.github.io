@@ -6,7 +6,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  font-family: helvetica, arial, sans;
+  font-family: 'Open Sans', helvetica, arial, sans;
   min-height: 100vh;
 }
 .content-container{
@@ -41,7 +41,10 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
-
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, sans;
+  font-weight: 100;
+}
 /* HEADER STYLES */
 .header {
   background-color: #000;
